@@ -1,0 +1,15 @@
+= License
+:repo: https://github.com/bitmandu/rotenc
+:mit: https://github.com/bitmandu/rotenc/blob/master/LICENSE
+:cc-by-sa: http://creativecommons.org/licenses/by-sa/4.0/
+
+== Software
+
+The {repo}[source code] is licensed under the {mit}[MIT License].
+
+== Documentation
+
+image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License]
+
+The documentation is licensed under the {cc-by-sa}[Creative Commons
+Attribution-ShareAlike 4.0 International License].

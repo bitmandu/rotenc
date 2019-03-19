@@ -1,0 +1,38 @@
+== Running the software
+:makefile: https://github.com/bitmandu/rotenc/blob/master/src/Makefile
+:screen: https://www.gnu.org/software/screen/manual/screen.html
+:miniterm: https://pyserial.readthedocs.io/en/latest/tools.html#module-serial.tools.miniterm
+
+= Compiling and Flashing
+
+A AVR-GCC {makefile}[Makefile] is provided to compile and flash the
+software.
+
+[source, shell]
+----
+$ make
+$ make flash
+----
+
+== Serial Output
+
+You'll need to connect a FTDI Serial-USB cable to see the serial
+output. You can use whatever serial terminal you prefer to see the
+messages. The Linux command {screen}[screen] and Python’s pySerial
+{miniterm}[miniterm console] are two options.
+
+[source, shell]
+----
+$ miniterm.py
+
+--- Available ports:
+---  1: /dev/ttyUSB0         FT232R USB UART
+--- Enter port index or full name: 1
+--- Miniterm on /dev/ttyUSB0  9600,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+[-- rotenc --]
++++++++++-------++++++++--------++++++++++++++++++-+++++++++++++++++------+++++++
+----
+
+The characters `+` and `-` as displayed as the rotary encoder is
+rotated clockwise and counterclockwise, respectively.

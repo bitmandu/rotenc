@@ -1,0 +1,10 @@
+= Introduction
+
+Tutorial on how to connect a rotary encoder to a ATmega328p
+microcontroller.
+
+This project features:
+
+* [x] ATmega328p software for AVR-GCC
+* [x] Interrupt-based approach (PCINT)
+* [x] Hardware debouncing using low-pass RC filters

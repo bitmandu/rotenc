@@ -1,0 +1,5 @@
+- xref:index.adoc[Introduction]
+- xref:theory.adoc[About Rotary Encoders]
+- xref:hardware.adoc[Connecting the Hardware]
+- xref:software.adoc[Running the Software]
+- xref:license.adoc[License]
