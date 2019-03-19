@@ -1,7 +1,7 @@
 /**
  * @file rotenc.c
  *
- * Rotary encoder.
+ * Rotary encoder interrupt handler for an AVR microcontroller.
  */
 
 #include <avr/interrupt.h>
@@ -30,15 +30,15 @@ void pcint1_init(void)
 ISR(PCINT1_vect)
 {
     uint8_t pinB = bit_is_set(ROTENC_PIN, ROTENC_B);
-    char direction;
+    char rotation;
 
     if (bit_is_set(ROTENC_PIN, ROTENC_A)) {
-        direction = pinB ? '-' : '+';
+        rotation = pinB ? '-' : '+';
     } else {
-        direction = pinB ? '+' : '-';
+        rotation = pinB ? '+' : '-';
     }
 
-    putchar(direction);
+    putchar(rotation);
 }
 
 int main(void)

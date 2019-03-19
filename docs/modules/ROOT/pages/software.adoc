@@ -1,12 +1,12 @@
-== Running the software
+= Running the software
+:avrdude: https://www.nongnu.org/avrdude/user-manual/avrdude_12.html
 :makefile: https://github.com/bitmandu/rotenc/blob/master/src/Makefile
-:screen: https://www.gnu.org/software/screen/manual/screen.html
 :miniterm: https://pyserial.readthedocs.io/en/latest/tools.html#module-serial.tools.miniterm
+:screen: https://www.gnu.org/software/screen/manual/screen.html
 
-= Compiling and Flashing
+== Compiling and Flashing
 
-A AVR-GCC {makefile}[Makefile] is provided to compile and flash the
-software.
+An AVR-GCC Makefile is provided to compile and flash the software.
 
 [source, shell]
 ----
@@ -14,12 +14,16 @@ $ make
 $ make flash
 ----
 
+You may need to change the `PROGRAMMER = usbasp` line in
+{makefile}[src/Makefile] to the {avrdude}[AVRDUDE name] for your
+programmer.
+
 == Serial Output
 
 You'll need to connect a FTDI Serial-USB cable to see the serial
-output. You can use whatever serial terminal you prefer to see the
-messages. The Linux command {screen}[screen] and Python’s pySerial
-{miniterm}[miniterm console] are two options.
+output. You can use whatever serial terminal you prefer — the Linux
+command {screen}[screen] and Python’s pySerial {miniterm}[miniterm
+console] are two options.
 
 [source, shell]
 ----
@@ -34,5 +38,5 @@ $ miniterm.py
 +++++++++-------++++++++--------++++++++++++++++++-+++++++++++++++++------+++++++
 ----
 
-The characters `+` and `-` as displayed as the rotary encoder is
+The characters `+` and `-` are displayed as the rotary encoder is
 rotated clockwise and counterclockwise, respectively.

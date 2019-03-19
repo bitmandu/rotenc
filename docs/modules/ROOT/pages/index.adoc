@@ -1,10 +1,9 @@
 = Introduction
 
-Tutorial on how to connect a rotary encoder to a ATmega328p
-microcontroller.
+Rotary encoder interrupt handler for an AVR microcontroller.
 
 This project features:
 
-* [x] ATmega328p software for AVR-GCC
-* [x] Interrupt-based approach (PCINT)
+* [x] AVR microntroller code for the AVR-GCC compiler
+* [x] Interrupt-based (PCINT) approach to read the rotary encoder
 * [x] Hardware debouncing using low-pass RC filters

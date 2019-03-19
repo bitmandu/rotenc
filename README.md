@@ -1,13 +1,13 @@
 rotenc
 ======
 
-An AVR-GCC library for a rotary encoder.
+Rotary encoder interrupt handler for an AVR microcontroller.
 
 Documentation
 -------------
 
-Detailed instructions on setting up the hardware and software are
-available in the [documentation][docs].
+More information on the hardware and software is in the
+[documentation][docs].
 
 Help / Issues
 -------------

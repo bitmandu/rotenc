@@ -9,8 +9,8 @@ The outputs tell you which _direction_ the encoder is rotating.
 image::rotary-encoder.jpg[Rotary Encoder, width=640]
 
 The three pins A, B, and ground (GND) are the primary outputs. When
-connected to the microcontroller, pins {A, B} toggle between high and
-low as the shaft is rotated.
+connected to a microcontroller pins {A, B} toggle between high and low
+as the shaft is rotated.
 
 NOTE: On some encoders, two more pins provide a switch that is toggled
 when the shaft is pushed. The rotary encoder shown above doesn't have
@@ -43,7 +43,7 @@ can be determined based on pin B.
 The following pseudocode captures the four transitions shown in the
 figures above.
 
-[source, python]
+[source, pseudocode]
 ----
 if A is HIGH:
    if B is HIGH:
@@ -57,8 +57,8 @@ else:
       rotation = NEGATIVE
 ----
 
-This is implemented in the interrupt handler for PCINT1 (see
-{rotenc}[rotenc.c]).
+This is implemented in the interrupt handler for PCINT1 in
+{rotenc}[rotenc.c].
 
 [source, C]
 ----
@@ -68,18 +68,17 @@ This is implemented in the interrupt handler for PCINT1 (see
 ISR(PCINT1_vect)
 {
     uint8_t pinB = bit_is_set(ROTENC_PIN, ROTENC_B);
-    char direction;
+    char rotation;
 
     if (bit_is_set(ROTENC_PIN, ROTENC_A)) {
-        direction = pinB ? '-' : '+';
+        rotation = pinB ? '-' : '+';
     } else {
-        direction = pinB ? '+' : '-';
+        rotation = pinB ? '+' : '-';
     }
 
-    putchar(direction);
+    putchar(rotation);
 }
 ----
 
-A sequence of `+` and `-` characters is sent to the serial port as the
-rotary encoder is rotated clockwise and counterclockwise,
-respectively.
+A sequence of `+` and `-` characters is displayed as the rotary
+encoder is rotated clockwise and counterclockwise, respectively.
