@@ -1,0 +1,16 @@
+= Help / Issues
+:issues: https://github.com/bitmandu/rotenc/issues
+:twitter: https://twitter.com/bitmandu
+:pulls: https://github.com/bitmandu/rotenc/pulls
+:repo: https://github.com/bitmandu/rotenc
+
+Please report all bugs and feature requests using the {issues}[Issue
+Tracker], or reach out to me on Twitter {twitter}[@bitmandu].
+
+== Contribute
+
+If you have an improvement to contribute, please send a {pulls}[pull
+request].
+
+You can also improve the documentation using the `Edit this Page` link
+in the top right corner of every page.
