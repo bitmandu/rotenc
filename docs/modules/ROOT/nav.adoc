@@ -2,5 +2,5 @@
 - xref:theory.adoc[About Rotary Encoders]
 - xref:hardware.adoc[Connecting the Hardware]
 - xref:software.adoc[Running the Software]
-- xref:license.adoc[License]
 - xref:help.adoc[Help / Issues]
+- xref:license.adoc[License]

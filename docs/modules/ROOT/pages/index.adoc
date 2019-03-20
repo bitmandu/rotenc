@@ -4,6 +4,6 @@ Rotary encoder interrupt handler for an AVR microcontroller.
 
 This project features:
 
-* [x] AVR microntroller code for the AVR-GCC compiler
+* [x] AVR microcontroller code for the AVR-GCC compiler
 * [x] Interrupt-based (PCINT) approach to read the rotary encoder
 * [x] Hardware debouncing using low-pass RC filters

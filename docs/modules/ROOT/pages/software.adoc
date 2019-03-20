@@ -20,10 +20,10 @@ programmer.
 
 == Serial Output
 
-You'll need to connect a FTDI Serial-USB cable to see the serial
-output. You can use whatever serial terminal you prefer — the Linux
-command {screen}[screen] and Python’s pySerial {miniterm}[miniterm
-console] are two options.
+Connect a FTDI Serial-USB cable to see the serial output. You can use
+whatever serial terminal you prefer — the Linux command
+{screen}[screen] and Python’s pySerial {miniterm}[miniterm console]
+are two options.
 
 [source, shell]
 ----

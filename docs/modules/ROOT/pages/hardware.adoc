@@ -13,9 +13,9 @@
 Connect the rotary encoder as shown below.
 
 The microcontroller pins you connect to should agree with
-{rotenc}[rotenc.c]. I used PCINT8 (PC0) and PCINT9 (PC1) for signal A
-and B, respectively. (Pins C and D aren't connected, since my rotary
-enoder didn't have a switch.)
+{rotenc}[rotenc.c]. I used `PCINT8` (`PC0`) and `PCINT9` (`PC1`) for
+signals A and B, respectively. (Pins C and D aren't connected, since
+my rotary encoder didn't have a switch.)
 
 image::schematic.jpg[Rotary Encoder Schematic, width=640]
 

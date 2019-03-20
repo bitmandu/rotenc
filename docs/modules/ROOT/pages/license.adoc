@@ -11,5 +11,6 @@ The {repo}[source code] is licensed under the {mit}[MIT License].
 
 image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License]
 
-The documentation is licensed under the {cc-by-sa}[Creative Commons
-Attribution-ShareAlike 4.0 International License].
+The documentation (this document) is licensed under the
+{cc-by-sa}[Creative Commons Attribution-ShareAlike 4.0 International
+License].
